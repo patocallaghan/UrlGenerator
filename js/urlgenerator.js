@@ -27,7 +27,7 @@
 	            "test" : ".test",
 	            "home" :"",
 	            "admin" : "/admin",
-	            "host" : "http://localhost:58012/"                   
+	            "host" : "http://localhost:37517/"                   
 	        };
 	    
 	    function initEvents(){
@@ -46,8 +46,16 @@
 
 	    //HTML HELPERS
 	    function showGenerator() {
-		   	_$container.show();
+	    	moveToTop();
+	    	_$container.show();
 		   	$(document).on('keyup', keypressHideGenerator);
+		}
+
+		function moveToTop () {
+			var posTop = window.scrollY + 15;
+	    	_$container.css({
+	    		top: posTop
+	    	});
 		}
 
 	    function hideGenerator(e){
@@ -70,7 +78,6 @@
 	    }
 
 	    function processInputKeypress(e) {
-	    	console.log(e.keyCode);
 	    	if(e.keyCode === 13) {
 	    		e.preventDefault();
 	    		submitOnEnter(this);
@@ -105,7 +112,7 @@
 	    	} else {
 	    		return false;
 	    	}
-	    	console.log(needTest, needDev, button, _$container.find('#' + button));
+
 	    	_$container.find('#' + button).click();
 	    }
 
@@ -115,9 +122,9 @@
 	    		$('body').append(_HTML);
 	    		_$container = $('#terabyte-url');
 	    		_$inputs = _$container.find('input');
-	    	} else {
-	    		showGenerator();
 	    	}
+
+	    	showGenerator();
 
 	    	return $.Deferred(function( dfd ) {
 		        if($('#terabyte-url').length && $('#terabyte-url:visible').length) {
@@ -129,7 +136,7 @@
 	    }
 
 	    function getHtml(){
-	      	return $.get(_URL.host + 'bookmarklet/urlgenerator.html');
+	      	return $.get(_URL.host + 'urlgenerator.html');
 	    }
 	    
 	    //URL HELPERS
@@ -183,8 +190,6 @@
 
 	        var openInNewWindow = false,
 	        	destinationUrls = generateDestinationUrls(btn);
-
-	        //console.log(destinationUrls);
 	        
 	        for(var i = 0, length = destinationUrls.length; i < length; i++) {
 
