@@ -60,7 +60,7 @@
 			  document.getElementsByTagName("head")[0].appendChild(fileref);
 			}
 		}
-		var filepath = "https://github.com/patocallaghan/UrlGenerator/blob/master/";
+		var filepath = "https://raw.github.com/patocallaghan/UrlGenerator/master";
 		loadFile(filepath + "css/style.css", "css");
 		loadFile(filepath + "js/urlgenerator.min.js", "js");
 	} else {
