@@ -27,7 +27,7 @@
 	            "test" : ".test",
 	            "home" :"",
 	            "admin" : "/admin",
-	            "host" : "https://github.com/patocallaghan/UrlGenerator/blob/master/"                   
+	            "host" : "https://raw.github.com/patocallaghan/UrlGenerator/master/"                   
 	        };
 	    
 	    function initEvents(){
