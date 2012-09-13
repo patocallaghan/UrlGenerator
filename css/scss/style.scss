@@ -21,7 +21,7 @@ $input-border: #999;
     top: 15px !important;
     right: 15px !important;
     background: $bg-color !important;
-    display: none !important;
+    display: none;
     width: 210px !important;
     @extend .border-box;
 	@include box-shadow((0px 1px 15px 1px rgba(0, 0, 0, 0.4),
