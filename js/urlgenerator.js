@@ -27,7 +27,7 @@
 	            "test" : ".test",
 	            "home" :"",
 	            "admin" : "/admin",
-	            "host" : "https://raw.github.com/patocallaghan/UrlGenerator/master/"                   
+	            "host" : "http://patocallaghan.github.com/UrlGenerator/"                   
 	        };
 	    
 	    function initEvents(){
