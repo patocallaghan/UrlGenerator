@@ -14,53 +14,53 @@ $input-border: #999;
 }
 
 #terabyte-url {
-    padding: 20px;
-    border: 2px solid $main-border;
-    position: absolute;
-    z-index: 9999;
-    top: 15px;
-    right: 15px;
-    background: $bg-color;
-    display: none;
-    width: 210px;
+    padding: 20px !important;
+    border: 2px solid $main-border !important;
+    position: absolute !important;
+    z-index: 9999 !important;
+    top: 15px !important;
+    right: 15px !important;
+    background: $bg-color !important;
+    display: none !important;
+    width: 210px !important;
     @extend .border-box;
 	@include box-shadow((0px 1px 15px 1px rgba(0, 0, 0, 0.4),
                          0px 9px 15px 5px rgba(0, 0, 0, 0.1)));
         
     fieldset {
-		border: none;
-		padding: 0;    
+		border: none !important;
+		padding: 0 !important;    
     }
 	legend {
-		display:none;
+		display:none !important;
 	}	
     label {
-		display: none;                                   
+		display: none !important;                                   
     }
 	input {
-		display: block;
-		border: 1px solid $input-border;
-		padding: 8px 15px;
-		margin: 0 0 15px 0;
-		width: 166px;
+		display: block !important;
+		border: 1px solid $input-border !important;
+		padding: 8px 15px !important;
+		margin: 0 0 15px 0 !important;
+		width: 166px !important;
 		@include border-radius(2px);
 		@extend .border-box;
 		@include box-shadow((inset 2px 2px 10px 1px #ccc));
-		color: #333;
+		color: #333 !important;
 	}
 	.btn {
-		font-family: Arial, Verdana, sans-serif;
-		font-size: 13px;
-		line-height: 13px;
-		padding: 10px 20px;
-		margin-left: 10px;
-		color: white;
-		cursor: pointer;
-		width: 78px;
+		font-family: Arial, Verdana, sans-serif !important;
+		font-size: 13px !important;
+		line-height: 13px !important;
+		padding: 10px 20px !important;
+		margin-left: 10px !important;
+		color: white !important;
+		cursor: pointer !important;
+		width: 78px !important;
 		@include border-radius(5px);
 		@extend .border-box;
-		display: inline-block; 
-		text-align: center;
+		display: inline-block !important; 
+		text-align: center !important;
 		@include background-with-css2-fallback(linear-gradient(top, #1e5799 0%, #103454 100%));
 		@include filter-gradient(#1e5799, #103454);
 		// background: #1e5799; 
@@ -75,31 +75,32 @@ $input-border: #999;
 		// background: linear-gradient(top, #1e5799 0%,#103454 100%); /* W3C */
 		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#103454',GradientType=0 ); /* IE6-8 */
 		&:first-child {
-			margin-left: 0;
+			margin-left: 0 !important;
 		};
 	}
 
 	.btn-wide {
-		display: block;
-		width: 100%;
-		margin: 10px 0 0;
+		display: block !important;
+		width: 100% !important;
+		margin: 10px 0 0 !important;
 	}
 
 	.close {
-		font-family: Arial, verdana, sans-serif;
-		width: 22px;
-		height: 22px;
+		font-family: Arial, verdana, sans-serif !important;
+		width: 22px !important;
+		height: 22px !important;
 		@include border-radius(15px);
-		background: black;
-		border: 4px solid white;
-		display: block;
-		color: white;
-		text-align: center;
-		vertical-align: bottom;
-		position: absolute;
-		top: -15px;
-		left: -15px;
+		background: black !important;
+		border: 4px solid white !important;
+		display: block !important;
+		color: white !important;
+		text-align: center !important;
+		vertical-align: bottom !important;
+		position: absolute !important;
+		top: -15px !important;
+		left: -15px !important;
 		@include box-shadow(0 0 3px 1px rgba(0, 0, 0, 0.5));
-		font-size: 18px;
+		font-size: 18px !important;
+		cursors: pointer !important;
 	}
 }
