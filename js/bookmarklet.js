@@ -60,7 +60,7 @@
 			  document.getElementsByTagName("head")[0].appendChild(fileref);
 			}
 		}
-		var filepath = "http://patocallaghan.github.com/UrlGenerator";
+		var filepath = "http://patocallaghan.github.com/UrlGenerator/";
 		loadFile(filepath + "css/style.css", "css");
 		loadFile(filepath + "js/urlgenerator.min.js", "js");
 	} else {
