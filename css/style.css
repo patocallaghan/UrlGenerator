@@ -16,7 +16,7 @@
   top: 15px !important;
   right: 15px !important;
   background: white !important;
-  display: none !important;
+  display: none;
   width: 210px !important;
   -webkit-box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.4), 0px 9px 15px 5px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.4), 0px 9px 15px 5px rgba(0, 0, 0, 0.1);
